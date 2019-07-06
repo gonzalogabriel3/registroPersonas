@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% load static %}
+	
+
+	<title>Login</title>
+
+</head>
+<body class="container">
+	<center>
+		<div>
+			<div class="panelInicio">
+				
+				<form method="post">
+				  {% csrf_token %}
+				  {{ form.as_p }}
+				  <br>
+				  <button type="submit" class="boton-ingresar">Ingresar</button>
+				</form>
+			</div>
+		</div>
+	</center>
+	
+</body>
+</html>
